@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CH Gate</title>
+</head>
+<body>
+
+<script>
+// RESPO Impuls aus index.html
+const respo = new URLSearchParams(window.location.search).get("respo");
+
+// CH Gate: einfache Prüfung
+if (respo) {
+    // Weiter zu ID.html mit RESPO
+    window.location.href = "ID.html?respo=" + respo;
+} else {
+    document.write("CH: kein RESPO erhalten");
+}
+</script>
+
+</body>
+</html>
